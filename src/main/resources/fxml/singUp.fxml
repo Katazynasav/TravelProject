@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="singUp" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #dad8d8;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Wanderlust.Controllers.SingUpController">
+   <children>
+      <ImageView fitHeight="84.0" fitWidth="103.0" layoutX="158.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../JAVA/FirstProjectSDA/png/2cd43b_2d921d72300f457b8f7e58ac5ee24e3b_mv2.png" />
+         </image>
+      </ImageView>
+      <Text fill="#5f5f5f" layoutX="162.0" layoutY="153.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wanderlust" textAlignment="CENTER" wrappingWidth="76.61260986328125">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="68.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration form">
+         <font>
+            <Font name="Century Schoolbook" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="DIMGRAY" layoutX="68.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fill the form for registration">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+      </Text>
+      <TextField fx:id="newUserName" layoutX="74.0" layoutY="232.0" prefHeight="35.0" prefWidth="259.0" promptText="Name" />
+      <TextField fx:id="newUserEmail" layoutX="74.0" layoutY="318.0" prefHeight="35.0" prefWidth="259.0" promptText="Email" />
+      <PasswordField fx:id="newUserPassword" layoutX="74.0" layoutY="363.0" prefHeight="35.0" prefWidth="259.0" promptText="Password" />
+      <PasswordField fx:id="newUserConfirmPassword" layoutX="74.0" layoutY="406.0" prefHeight="35.0" prefWidth="259.0" promptText="Confirm Password" />
+      <Button fx:id="enterSingUpButton" layoutX="102.0" layoutY="477.0" mnemonicParsing="false" onAction="#saveToDatabase" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #696969; -fx-background-radius: 30PX;" text="Register" textFill="#f9f5f5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="newUserSurname" layoutX="74.0" layoutY="274.0" prefHeight="35.0" prefWidth="259.0" promptText="Surname" />
+      <Button fx:id="exitTheProgram" layoutX="102.0" layoutY="534.0" mnemonicParsing="false" onAction="#exitTheProgramOnAction" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #696969; -fx-background-radius: 30PX;" text="Exit" textFill="#f9f5f5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="message" layoutX="88.0" layoutY="451.0" prefHeight="15.0" prefWidth="233.0" textAlignment="CENTER" textFill="#cf0f0f">
+         <font>
+            <Font name="Century Schoolbook" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="370.0" textAlignment="CENTER" textFill="#e31414">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
