@@ -1,4 +1,4 @@
-package Wanderlust.Database.Domain;
+package Wanderlust.Domain;
 
 import javax.persistence.*;
 

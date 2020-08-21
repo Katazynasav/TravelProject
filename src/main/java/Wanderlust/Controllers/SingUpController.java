@@ -2,8 +2,8 @@ package Wanderlust.Controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import Wanderlust.Database.DAO.UserDAO;
-import Wanderlust.Database.Domain.User;
+import Wanderlust.DAO.UserDAO;
+import Wanderlust.Domain.User;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

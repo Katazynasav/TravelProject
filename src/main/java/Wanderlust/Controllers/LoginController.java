@@ -1,7 +1,7 @@
 package Wanderlust.Controllers;
 
 
-import Wanderlust.Database.DAO.UserDAO;
+import Wanderlust.DAO.UserDAO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -41,7 +41,7 @@ public class LoginController implements Initializable {
         window.setScene(singUpScene);
         window.show();
     }
-    public void loginValidation(ActionEvent event) {
+    public void loginValidation(ActionEvent event) throws IOException {
         UserDAO userDAO = new UserDAO();
         String password = userDAO.getUser(userLoginEmailField.getText());
         password = password.substring(1, password.length() - 1);
@@ -49,7 +49,12 @@ public class LoginController implements Initializable {
         if(userLoginPasswordField.getText().isBlank() || userLoginPasswordField.getText().isBlank())  {
             loginMessage.setText("Email or password field is empty.");
         } else if (userLoginPasswordField.getText().equals(password)) {
-            loginMessage.setText("Connected.");
+            Parent menuFxml = FXMLLoader.load(getClass().getResource("/fxml/menu.fxml"));
+            Scene menuScene = new Scene(menuFxml);
+            Stage window = (Stage)((Node)event.getSource()).getScene().getWindow();
+            window.setScene(menuScene);
+            window.show();
+
         }else{
             loginMessage.setText("Email or password is incorrect.");
         }

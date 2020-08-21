@@ -1,17 +1,12 @@
-package Wanderlust.Database.DAO;
+package Wanderlust.DAO;
 
 
-import Wanderlust.Database.Domain.User;
-import Wanderlust.Database.Utils.HibernateUtils;
-import net.sf.ehcache.hibernate.HibernateUtil;
-import org.hibernate.Criteria;
+import Wanderlust.Domain.User;
+import Wanderlust.Utils.HibernateUtils;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Restrictions;
 import org.hibernate.query.Query;
 
-import javax.persistence.Column;
-import java.util.Iterator;
 import java.util.List;
 
 
