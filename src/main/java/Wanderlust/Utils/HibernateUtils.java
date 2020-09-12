@@ -14,7 +14,7 @@ public class HibernateUtils {
 
     public static SessionFactory getSessionFactory() {
 
-        if(sessionFactory == null) {
+        if (sessionFactory == null) {
             Configuration configuration = new Configuration();
             Properties properties = new Properties();
             properties.put(Environment.DRIVER, "com.mysql.jdbc.Driver");

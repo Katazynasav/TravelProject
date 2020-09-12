@@ -6,6 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import java.util.Scanner;
 
 
 public class Main extends Application {
@@ -20,6 +21,7 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        launch(args);
+    launch(args);
+
     }
 }

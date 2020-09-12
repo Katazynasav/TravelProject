@@ -1,18 +1,23 @@
 package Wanderlust.Domain;
 
+import org.hibernate.annotations.NaturalId;
+
 import javax.persistence.*;
 
 @Entity
-@Table (name = "user_account")
+@Table (name = "user_account",uniqueConstraints = {
+        @UniqueConstraint(columnNames = "userEmail")})
 public class User {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer user_ID;
 
     String userName;
 
     String userSurname;
 
+    @NaturalId(mutable = false)
+    @Column(name = "userEmail", unique = true)
     String userEmail;
 
     String userPassword;
