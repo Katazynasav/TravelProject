@@ -39,7 +39,7 @@
                   <Font name="Century Schoolbook" size="12.0" />
                </font>
             </Text>
-            <Button fx:id="loginButton" layoutX="73.0" layoutY="335.0" mnemonicParsing="false" onAction="#loginValidation" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #194046; -fx-background-radius: 30PX;" text="Login" textFill="#f9f5f5">
+            <Button fx:id="loginButton" layoutX="73.0" layoutY="335.0" mnemonicParsing="false" onAction="#loginValidation" prefHeight="44.0" prefWidth="203.0" styleClass="login-btn" stylesheets="@../Style/Style.css" text="Login" textFill="#f9f5f5">
                <font>
                   <Font size="14.0" />
                </font>
@@ -56,7 +56,7 @@
                   <Font name="Century Schoolbook" size="12.0" />
                </font>
             </Text>
-            <Button fx:id="exitTheProgram" layoutX="73.0" layoutY="392.0" mnemonicParsing="false" onAction="#exitTheProgramOnAction" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #194046; -fx-background-radius: 30PX;" text="Exit" textFill="#f9f5f5">
+            <Button fx:id="exitTheProgram" layoutX="73.0" layoutY="392.0" mnemonicParsing="false" onAction="#exitTheProgramOnAction" prefHeight="44.0" prefWidth="203.0" styleClass="login-btn" stylesheets="@../Style/Style.css" text="Exit" textFill="#f9f5f5">
                <font>
                   <Font size="14.0" />
                </font>

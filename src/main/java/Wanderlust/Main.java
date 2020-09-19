@@ -6,16 +6,29 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import java.util.Scanner;
+
+import java.io.File;
 
 
 public class Main extends Application {
-
+    private double x, y;
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent loginRoot = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/login.fxml"));
+        File file = new File("/src/main/java/Wanderlust/Style/Style.css");
         primaryStage.initStyle(StageStyle.UNDECORATED);
-        primaryStage.setScene(new Scene(loginRoot, 700, 500));
+        primaryStage.setScene(new Scene(root, 700, 500));
+        root.getStylesheets().clear();
+        root.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+        root.setOnMouseDragged(event -> {
+
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+
+        });
         primaryStage.show();
     }
 

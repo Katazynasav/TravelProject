@@ -39,7 +39,7 @@
          <padding>
             <Insets left="10.0" />
          </padding></PasswordField>
-      <Button fx:id="enterSingUpButton" layoutX="408.0" layoutY="362.0" mnemonicParsing="false" onAction="#saveToDatabase" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #194046; -fx-background-radius: 30PX;" text="Register" textFill="#f9f5f5">
+      <Button fx:id="enterSingUpButton" layoutX="408.0" layoutY="362.0" mnemonicParsing="false" onAction="#saveToDatabase" prefHeight="44.0" prefWidth="203.0" styleClass="login-btn" stylesheets="@../Style/Style.css" text="Register" textFill="#f9f5f5">
          <font>
             <Font size="14.0" />
          </font>
@@ -48,7 +48,7 @@
          <padding>
             <Insets left="10.0" />
          </padding></TextField>
-      <Button fx:id="exitTheProgram" layoutX="408.0" layoutY="422.0" mnemonicParsing="false" onAction="#exitTheProgram" prefHeight="44.0" prefWidth="203.0" style="-fx-background-color: #194046; -fx-background-radius: 30PX;" text="Exit" textFill="#f9f5f5">
+      <Button fx:id="exitTheProgram" layoutX="408.0" layoutY="422.0" mnemonicParsing="false" onAction="#exitTheProgram" prefHeight="44.0" prefWidth="203.0" styleClass="login-btn" stylesheets="@../Style/Style.css" text="Exit" textFill="#f9f5f5">
          <font>
             <Font size="14.0" />
          </font>

@@ -1,0 +1,43 @@
+.menu-btn{
+-fx-background-color:transparent;
+}
+.menu-btn:hover{
+-fx-border-color:#d0cf79;
+}
+.menu-btn:pressed{
+-fx-border-radius:#d0cf79;
+-fx-text-fill: #d0cf79;
+-fx-font-family:Century Schoolbook;
+-fx-font-size:18;
+}
+
+.login-btn{
+-fx-background-color:#194046;
+-fx-text-fill:white;
+-fx-background-radius:30PX;
+
+}
+.login-btn:hover{
+-fx-background-color:#d0cf79;
+-fx-background-radius:30PX;
+-fx-text-fill:#194046;
+}
+.login-btn:pressed{
+-fx-background-color:#d0cf79;
+-fx-background-radius:30PX;
+-fx-text-fill:#194046;
+}
+.inside-button{
+-fx-background-color: transparent;
+-fx-border-radius:15PX;
+-fx-text-fill:WHITE;
+-fx-border-color:WHITE;
+}
+.inside-button:pressed{
+-fx-background-color: transparent;
+-fx-border-radius:15PX;
+-fx-text-fill:WHITE;
+-fx-border-color:WHITE;
+-fx-font-family:Century Schoolbook;
+-fx-font-size:20;
+}
